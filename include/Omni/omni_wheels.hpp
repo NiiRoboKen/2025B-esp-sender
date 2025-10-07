@@ -9,6 +9,7 @@ class OmniWheels {
         OmniWheels(double first_omni_angle);
         void Run(double vecotor_x, double vector_y, double rotation);
         bool ReceivePacket();
+        static const double INPUT_COUNT_PER_EXEC;
     private:
         std::array<OmniWheel, num> Wheels;
         double m_input_count;
