@@ -8,6 +8,7 @@ class OmniWheel {
         OmniWheel(double vector_x, double vector_y, double shift_power_percentage, double turn_power_percentage);
         void Run(double vector_x, double vector_y, double rotation);
         void Stop();
+        bool ReceiveFeedback();
     private:
         C620 m_robomas_motor;
         double m_vector_x ;
