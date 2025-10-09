@@ -53,4 +53,5 @@ C620 *-- C620Info
 CANTransceiver *-- CANPacket
 RMOmniWheels o-- CANPacket
 C620Info o-- CANPacket
+CANTransceiver <.. RMOmniWheels
 ```
