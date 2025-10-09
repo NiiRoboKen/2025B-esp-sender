@@ -16,6 +16,9 @@ sequenceDiagram
     CANT-->>-RWs: CAMPacket& CtrlPacket
     RWs->>+RW: RMOmniWheel(ID)
     RW->>+620: C620(ID)
+    620->>+CANT: SetID(ID)
+    CANT->>CP: reference
+    CANT-->>620: CANPacket& CtrlPacket
     620->>+620i: C620Info(ID)
     620i->>+CANT: SetID(0x200 + ID)
     CANT->>FP: CANPacket(ID)
