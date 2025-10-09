@@ -4,7 +4,7 @@ class RMOmniWheels{
     -double InputCount
     -array~RMOmniWheel~ Wheels
     -CANPacket& CtrlPacket
-    +RMOmniWheel()
+    +RMOmniWheel(CANPacket CtrlPacket)
     +Run(double vec_x, double vec_y, double vec_turn)
 }
 class RMOmniWheel{
@@ -27,7 +27,7 @@ class C620{
 class C620Info{
     -CANPacket& FeedbackPacket
     +int ID
-    +C620Info(int ID)
+    +C620Info(int ID, CANPacket FeedbackPacket)
     +Angle() int16_t
     +RPM() int16_t
     +Current() int16_t
