@@ -4,7 +4,6 @@ class RMOmniWheels{
     -double InputCount
     -array~RMOmniWheel~ Wheels
     -CANPacket& CtrlPacket
-    -CANTransceiver& Transceiver
     +RMOmniWheel()
     +Run(double vec_x, double vec_y, double vec_turn)
 }
@@ -54,5 +53,4 @@ C620 *-- C620Info
 CANTransceiver *-- CANPacket
 RMOmniWheels o-- CANPacket
 C620Info o-- CANPacket
-RMOmniWheels o-- CANTransceiver
 ```
