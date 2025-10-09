@@ -9,6 +9,7 @@ class RMOmniWheels{
     +Run(double vec_x, double vec_y, double vec_turn)
 }
 class RMOmniWheel{
+    -int ID
     -double vec_x
     -double vec_y
     -C620 SpeedController
