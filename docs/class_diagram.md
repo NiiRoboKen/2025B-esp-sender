@@ -43,7 +43,7 @@ class CANPacket{
 class CANTransceiver{
     -vector~CANPacket~ ReceivedPackets
     -SetID(int ID) CANPacket&
-    +Send(CANPacket SentPAcket)
+    +Send(CANPacket SentPacket)
     +Receive()
 }
 
